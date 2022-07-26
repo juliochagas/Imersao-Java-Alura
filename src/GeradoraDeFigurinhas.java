@@ -2,7 +2,6 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.InputStream;
-import java.net.URL;
 import java.awt.Color;
 import java.awt.Font;
 import javax.imageio.ImageIO;
@@ -11,13 +10,10 @@ public class GeradoraDeFigurinhas {
     
 
 
-    public void cria() throws Exception  {
+    public void cria(InputStream inputStream, String nomeArquivo) throws Exception  {
         // leitura da imagem
         // InputStream inputStream = new FileInputStream(new File("entrada/filme.jpg"));
-        InputStream inputStream = new URL(
-            "https://m.media-amazon.com/images/M/MV5BMzE5MDM1NDktY2I0OC00YWI5LTk2NzUtYjczNDczOWQxYjM0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_Ratio0.6716_AL_.jpg"
-            )
-            .openStream();
+        
         BufferedImage ImagemOriginal = ImageIO.read(inputStream);
         
         // cria uma nova imagem com transparencia e tamanho novo
@@ -40,12 +36,8 @@ public class GeradoraDeFigurinhas {
         // escrever uma frase na nova imagem
         graphics.drawString("TOP", 100, novaAltura-100);
         // escrever a imagem nova em um arquivo
-        ImageIO.write(novaImagem, "PNG", new File("entrada/figurinha.png"));
+        ImageIO.write(novaImagem, "PNG", new File("entrada/"+nomeArquivo));
 
     }
 
-    public static void main(String[] args) throws Exception {
-        var geradora = new GeradoraDeFigurinhas();
-        geradora.cria();
-    }
 }
