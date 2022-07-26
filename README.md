@@ -1,18 +1,43 @@
-## Getting Started
+# Imersao-Java-Alura
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+> Status: Em desenvovimento
 
-## Folder Structure
+### Aula 01 - Consumindo uma API de Filmes com Java
 
-The workspace contains two folders by default, where:
+* Consumir uma API do site IMDb e separar em conteúdos:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+* Título do Filme;
+* Link da Imagem;
+* Notas dos Usuários.
+### Aula 02 - Gerando Figurinhas para o WhatsApp
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+* Gerar figurinhas a partir de uma imagem do diretório local ou de uma url;
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+* Criar uma imagem com leitura no terminal;
+* Enviar imagem no WhatsApp;
+* Conseguir centralizar o texto criado.
+### Aula 03 - Aula com foco em Orientação a Objetos, Refatoração e Encapsulamento
 
-## Dependency Management
+* Gerar figurinhas a partir de uma imagem de uma url, do site da NASA e do IMDb;
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+* Consumir API do site do IMBd e da Nasa ou os demais links que os instrutores criam;
+* Criação de figurinhas para o WhatsApp com imagens incríveis da Nasa
+### Aula 04 - Criando nossa própria API com Spring
+
+* API Web Service, podendo ser nosso próprio Web Service com todo o código que escrevemos e gerar mais figurinhas baseado neste novo serviço.
+
+* Criação própria API e WEB Service
+* Acesso à Primavera
+* Acesso ao MongoDB
+* Acesso ao PostMan
+### Aula 05 - Publicando nossa API no Cloud
+
+* Colocar nossa aplicação no ar, fazer um Deploy
+
+* Acesso ao Heroku
+* Aplicação na nuvem
+* Gerar figurinhas a partir do conteúdo desta API.
+# Instrutores
++ Jaqueline Oliveira
++ Alexandre Aquiles
++ Paulo Silveira
